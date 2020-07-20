@@ -1,67 +1,66 @@
 body {
-    background: rgb(53, 50, 50);
-    font-family: 'Marvel', sans-serif;
-    margin-top: 100px;
+  background: rgb(53, 50, 50);
+  font-family: 'Marvel', sans-serif;
+  margin-top: 100px;
 }
   
 h1 {
-    color: red;
-    font-size: 50px;
-    text-shadow: 3px 3px 8px #ff0000;
-    text-align: center;
+  color: red;
+  font-size: 50px;
+  text-shadow: 3px 3px 8px #ff0000;
+  text-align: center;
 }
   
 h2 {
-    color: red;
-    font-size: 40px;
-    text-shadow: 3px 3px 8px #ff0000;
-    text-align: center;
+  color: red;
+  font-size: 40px;
+  text-shadow: 3px 3px 8px #ff0000;
+  text-align: center;
 }
 
 p {
-    color: red;
-    font-size: 25px;
+  color: red;
+  font-size: 25px;
 }
 
 .my-navbar {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    width: 100%;
-    align-items: center;
-    background-color: black;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  align-items: center;
+  background-color: black;
 }
 
 .logo {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .logo > img {
-    height: 70px;
-    width: 70px;
-    object-fit: contain;
-    margin: 10px;
-    padding: 10px;
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+  margin: 10px;
+  padding: 10px;
 }
 
-
 .my-btn {
-    text-decoration: none;
-    margin: 20px;
-    padding: 10px;
-    background-color :red;
-    color:white;
-    font-size: 24px;
-    font-family: 'Marvel', sans-serif;
-    border-radius: 20px;
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px;
+  background-color :red;
+  color:black;
+  font-size: 24px;
+  font-family: 'Marvel', sans-serif;
+  border-radius: 30px;
 }
 
 .my-btn:hover {
-    background-color:white;
-    text-decoration: none;
-    color:black;
+  background-color:white;
+  text-decoration: none;
+  color:black;
 }
 
 .menu {
@@ -79,7 +78,7 @@ p {
   color: black;
   font-size: 24px;
   font-family: 'Marvel', sans-serif;
-  border-radius: 4px;
+  border-radius: 30px;
   border-color: red;
 }
 
@@ -101,62 +100,64 @@ p {
 }
 
 .banner {
-    background-image: url(images/dead1.jpg);
-    height: 60vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
+  background-image: url(images/dead1.jpg);
+  height: 60vh;
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  text-align: center;
 }
 
 .banner > h1 {
-    font-family: 'Marvel', sans-serif; 
-    color: red;
-    font-size: 80px;
-    font-weight: bold;
-    text-align: left;
-    padding: 20vh;
+  font-family: 'Marvel', sans-serif; 
+  color: red;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: left;
+  padding: 20vh;
   }
 
 .teaser {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .box1 {
-    background-color: black;
-    border-radius: 20px;
-    border: 2px solid red;
-    box-shadow: 5px 5px 5px red;
-    margin-top: 20px;
-    padding: 10px;
-    width: 50%;
+  background-color: black;
+  border-radius: 20px;
+  border: 2px solid red;
+  box-shadow: 5px 5px 5px red;
+  margin-top: 20px;
+  padding: 10px;
+  width: 50%;
 }
 
 .video {
-    background-color: black;
-    border-radius: 20px;
-    border: 2px solid red;
-    box-shadow: 5px 5px 5px red;
-    margin-top: 20px;
-    padding: 10px;
-    width: 50%;
-    align-items: center;
+  background-color: black;
+  border-radius: 20px;
+  border: 2px solid red;
+  box-shadow: 5px 5px 5px red;
+  margin-top: 20px;
+  padding: 10px;
+  width: 50%;
+  align-items: center;
 }
 
 .casting{
-    display: flex;
-    font-size: 40px;
-    text-shadow: 2px 2px 8px #000000;
-    color: red; 
-    justify-content:space-around;
-    margin-top: 20px;
+  display: flex;
+  font-size: 40px;
+  text-shadow: 2px 2px 8px #000000;
+  color: red; 
+  justify-content:space-around;
+  margin-top: 20px;
 }
+
 .carousel {
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .carousel-inner{
@@ -174,18 +175,20 @@ p {
 }
 
 .mapouter {
-    position: relative;
-    text-align: right;
-    height: 307px;
-    width: 317px;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 307px;
-    width: 317px;
+  overflow: hidden;
+  background: none !important;
 }
+
+#gmap_canvas {
+  width: 100%;
+}
+
 .footer {
   background:black;
   display: flex;
@@ -195,10 +198,12 @@ p {
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
 }
+
 .footer-links {
   display: flex;
   align-items: center;
 }
+
 .footer-links a {
   color: red;
   opacity: 0.35;
@@ -207,18 +212,22 @@ p {
   font-size: 24px;
   padding: 0px 10px;
 }
+
 .footer-links a:hover {
   opacity: 1;
 }
+
 .footer .fa-heart {
   color: #D23333;
 }
+
 .footer-copyright {
-    color: red;
-    font-size: 30px ;
-    text-decoration: none;
-    text-shadow: 2px 2px 8px #666666;
+  color: red;
+  font-size: 30px ;
+  text-decoration: none;
+  text-shadow: 2px 2px 8px #666666;
 }
+
 #Contact{
   color: white;
 }
@@ -230,38 +239,9 @@ p {
   height: 200px;
   width: auto;
   color: red;
+  object-fit: cover;
 }
 
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
+/*.card-category{
+  
 }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
