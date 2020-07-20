@@ -46,7 +46,8 @@ p {
     padding: 10px;
 }
 
-my-btn {
+
+.my-btn {
     text-decoration: none;
     margin: 20px;
     padding: 10px;
@@ -223,4 +224,3 @@ justify-content:space-around;
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
