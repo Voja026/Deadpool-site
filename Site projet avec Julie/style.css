@@ -1,12 +1,13 @@
 body {
     background: rgb(53, 50, 50);
-    font-family: arial;
+    font-family: 'Marvel', sans-serif;
     margin-top: 100px;
 }
   
 h1 {
     color: red;
-    font-size: 32px;
+    font-size: 50px;
+    text-shadow: black;
     text-align: center;
 }
   
@@ -52,3 +53,23 @@ p {
 .teaser {
     display: flex;
 }
+
+.casting{
+    display: flex;
+    font-size: 40px;
+    color: red; 
+justify-content:space-around;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel div {
+  width: 700px;
+  height: 700px;
+}
+ol::before {content: "•"; color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
