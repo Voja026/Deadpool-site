@@ -13,7 +13,7 @@ h1 {
   
 h2 {
     color: red;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 p {
@@ -44,32 +44,96 @@ p {
     padding: 10px;
 }
 
-.link {
+.my-btn {
     text-decoration: none;
     margin: 20px;
     padding: 10px;
+    background-color :red;
+    color: black;
+    font-size: 24px;
+    font-family: 'Marvel', sans-serif;
+    border-radius: 4px;
 }
+
+.my-btn:hover {
+    background-color:white;
+    text-decoration: none;
+    color:black;
+}
+
+.banner {
+    background-image: url(images/dead1.jpg);
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner > h1 {
+    font-family: 'Marvel', sans-serif; 
+    color: red;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20vh;
+  }
 
 .teaser {
     display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.casting{
-    display: flex;
-    font-size: 40px;
-    color: red; 
-justify-content:space-around;
+.box1 {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid red;
+    box-shadow: 5px 5px 5px red;
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
 }
+
+.video {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid red;
+    box-shadow: 5px 5px 5px red;
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+    align-items: center;
+}
+
 .carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 
-.carousel div {
-  width: 700px;
-  height: 700px;
+.carousel > img {
+    object-fit: contain;
+    width: 500px;
+    height: 500px;
 }
-ol::before {content: "•"; color: red;
+
+.list > ol::before {content: "•"; color: red;
   display: inline-block; width: 1em;
-  margin-left: -1em}
+  margin-left: -1em
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 307px;
+    width: 317px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 307px;
+    width: 317px;
+}
