@@ -107,18 +107,23 @@ p {
     align-items: center;
 }
 
-.carousel {
+.casting{
     display: flex;
-    align-items: center;
-    justify-content: center;    
+    font-size: 40px;
+    text-shadow: 2px 2px 8px #000000;
+    color: red; 
+justify-content:space-around;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel > img {
-    object-fit: contain;
-    width: 500px;
-    height: 500px;
+.carousel > div {
+  width: 500px;
+  height: 500px;
 }
-
 .list > ol::before {content: "•"; color: red;
   display: inline-block; width: 1em;
   margin-left: -1em
