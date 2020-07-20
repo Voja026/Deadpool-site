@@ -7,13 +7,15 @@ body {
 h1 {
     color: red;
     font-size: 50px;
-    text-shadow: black;
+    text-shadow: 3px 3px 8px #ff0000;
     text-align: center;
 }
   
 h2 {
     color: red;
     font-size: 40px;
+    text-shadow: 3px 3px 8px #ff0000;
+    text-align: center;
 }
 
 p {
@@ -44,15 +46,16 @@ p {
     padding: 10px;
 }
 
+
 .my-btn {
     text-decoration: none;
     margin: 20px;
     padding: 10px;
     background-color :red;
-    color: black;
+    color:white;
     font-size: 24px;
     font-family: 'Marvel', sans-serif;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .my-btn:hover {
@@ -147,7 +150,7 @@ justify-content:space-around;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 70px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
 }
@@ -172,5 +175,52 @@ justify-content:space-around;
 .footer-copyright {
     color: red;
     font-size: 30px ;
+    text-decoration: none;
     text-shadow: 2px 2px 8px #666666;
 }
+#Contact{
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+  height: 200px;
+  width: auto;
+  color: red;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
