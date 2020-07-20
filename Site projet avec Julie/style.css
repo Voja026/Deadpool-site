@@ -1,88 +1,226 @@
 body {
-    background: rgb(0, 0, 0);
-    font-family: arial;
-  }
+    background: rgb(53, 50, 50);
+    font-family: 'Marvel', sans-serif;
+    margin-top: 100px;
+}
   
-  h1 {
+h1 {
     color: red;
-    font-size: 32px;
-  }
+    font-size: 50px;
+    text-shadow: 3px 3px 8px #ff0000;
+    text-align: center;
+}
   
 h2 {
     color: red;
-    font-size: 32px;
+    font-size: 40px;
+    text-shadow: 3px 3px 8px #ff0000;
+    text-align: center;
 }
+
 p {
     color: red;
     font-size: 25px;
 }
 
-.carousel{
-    position: relative;
-    height:100px;
-    width: 100%;
-    margin-right: auto;
-
-}
-
-.carousel__images {
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel__track-container {
-    background: black;
-    padding: 500px;
-    height: 100%;
-    position: relative;
-}
-
-.carousel__track{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.carousel__slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.carousel__button {
- position: absolute;
- top: 50%;
- transform:translateY(-50%) ;
- background: transparent;
- border: 0;
- cursor: pointer;
-}
-.carousel__button--left {
-    left: -50px;
-}
-.carousel__button--right {
-    right: -50px;
-}
-
-.carousel__button img {
-    width 1px;
-}
-
-.carousel__nav {
+.my-navbar {
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    align-items: center;
+    background-color: black;
 }
-.carousel__indicator {
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: rgba(0,0,0,.3);
-    margin: 0 12px;
+
+.logo {
+    text-decoration: none !important;
 }
-.carousel__indicator.current-slide {
-    background: rgba(0,0,0,.75);
+
+.logo > img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+    margin: 10px;
+    padding: 10px;
+}
+
+my-btn {
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    background-color :red;
+    color:white;
+    font-size: 24px;
+    font-family: 'Marvel', sans-serif;
+    border-radius: 20px;
+}
+
+.my-btn:hover {
+    background-color:white;
+    text-decoration: none;
+    color:black;
+}
+
+.banner {
+    background-image: url(images/dead1.jpg);
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner > h1 {
+    font-family: 'Marvel', sans-serif; 
+    color: red;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20vh;
+  }
+
+.teaser {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.box1 {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid red;
+    box-shadow: 5px 5px 5px red;
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+}
+
+.video {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid red;
+    box-shadow: 5px 5px 5px red;
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+    align-items: center;
+}
+
+.casting{
+    display: flex;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px #000000;
+    color: red; 
+justify-content:space-around;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel > div {
+  width: 500px;
+  height: 500px;
+}
+.list > ol::before {content: "•"; color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 307px;
+    width: 317px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 307px;
+    width: 317px;
+}
+.footer {
+  background:black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: red;
+  opacity: 0.35;
+  text-shadow: 2px 2px 8px #666666;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+.footer-copyright {
+    color: red;
+    font-size: 30px ;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #666666;
+}
+#Contact{
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+  height: 200px;
+  width: auto;
+  color: red;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
